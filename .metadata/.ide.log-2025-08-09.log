@@ -1,0 +1,9 @@
+2025-08-11 15:01:10,261 [INFO] MainUpdater:2873 - connection check result : 10
+2025-08-11 15:01:10,410 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2025-08-11 15:01:10,411 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2025-08-11 15:01:10,412 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2025-08-11 15:01:10,978 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2025-08-11 15:01:10,978 [INFO] DetailPanel:341 - Set advertising image to C:/Users/nguye/STM32Cube/Repository/\en.2400x1350px.jpeg
+2025-08-11 15:06:00,625 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2025-08-11 15:06:00,931 [INFO] ApiDb:448 - Save user favorites file C:\Users\nguye/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2025-08-11 15:06:00,931 [INFO] ApiDb:452 - User favorites MCUs=[]

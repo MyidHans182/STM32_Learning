@@ -1,0 +1,10 @@
+15:22:19 **** Incremental Build of configuration Debug for project current_sensor ****
+make -j20 all 
+arm-none-eabi-size  current_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13820	     16	   1744	  15580	   3cdc	current_sensor.elf
+Finished building: default.size.stdout
+ 
+
+15:22:19 Build Finished. 0 errors, 0 warnings. (took 264ms)
+

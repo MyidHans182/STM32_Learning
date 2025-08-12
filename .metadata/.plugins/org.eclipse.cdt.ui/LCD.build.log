@@ -1,0 +1,26 @@
+23:45:43 **** Incremental Build of configuration Debug for project LCD ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/liquidcrystal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/liquidcrystal_i2c.d" -MT"Core/Src/liquidcrystal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/liquidcrystal_i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/liquidcrystal_i2c.c: In function 'ExpanderWrite':
+../Core/Src/liquidcrystal_i2c.c:259:11: warning: unused variable 'data' [-Wunused-variable]
+  259 |   uint8_t data = _data | dpBacklight;
+      |           ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:7: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+  136 |       itoa(x, snum, 10);
+      |       ^~~~
+arm-none-eabi-gcc -o "LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Hoang_Project\Years\2024\Workspace\STM32\Workspace\LCD\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD.elf
+ 
+arm-none-eabi-size  LCD.elf 
+arm-none-eabi-objdump -h -S LCD.elf  > "LCD.list"
+   text	   data	    bss	    dec	    hex	filename
+  10368	     28	   1652	  12048	   2f10	LCD.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD.list
+ 
+
+23:45:43 Build Finished. 0 errors, 2 warnings. (took 830ms)
+

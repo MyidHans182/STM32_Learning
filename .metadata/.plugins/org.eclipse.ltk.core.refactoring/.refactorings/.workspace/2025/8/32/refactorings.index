@@ -1,0 +1,4 @@
+1754636058552	Delete resource 'voltage'
+1754659256799	Delete resource 'LCD_Display/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.h'
+1754662380910	Delete resource 'LCD/Core/Src/liquidcrystal_i2c.c'
+1754710757864	Delete resource '01_LED'
