@@ -40,6 +40,7 @@ int main(void)
 		else
 		{
 			GPIOA -> BSRR = (1U<<21); // already set at pin 5 BS5
+
 		}
 
 

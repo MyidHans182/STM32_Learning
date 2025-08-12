@@ -2908,3 +2908,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2025-08-12 10:15:48.839
 !MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-12 11:22:01.959
+!MESSAGE Indexed '06_UART_TX' (3 sources, 59 headers) in 0.383 sec: 2,837 declarations; 3,800 references; 3 unresolved inclusions; 30 syntax errors; 707 unresolved names (9.6%)
